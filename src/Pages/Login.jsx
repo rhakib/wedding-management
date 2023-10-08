@@ -1,13 +1,14 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import UseAuth from '../Provider/UseContext/UseAuth';
 import toast from 'react-hot-toast';
+import SocialLogin from './SocialLogin';
 
 const Login = () => {
 
     const {signInUser} = UseAuth()
     const navigate = useNavigate()
-
+    const location = useLocation()
     const handleLogin = (e) => {
 
         e.preventDefault()
@@ -21,12 +22,12 @@ const Login = () => {
         .then(res => {
             console.log(res)
             toast.success('Successfuly logged in')
-            navigate('/')
+            navigate(location?.state ? location.state : '/')
 
 
         })
         .catch(err => {
-            toast.error('please provide the valid email and password')
+            toast.error('please provide a valid email and password')
         })
 }
     return (
@@ -53,11 +54,12 @@ const Login = () => {
                             </label>
                         </div>
                         <div className="form-control mt-6">
-                            <button type='submit' className="btn btn-primary">Login</button>
+                            <button type='submit' className="btn text-xl text-white hover:bg-slate-900 bg-slate-500">Login</button>
                         </div>
-                        <p className='ml-4 mb-2'>Don't an account? <Link to='/register' className='text-lg hover:underline font-semibold text-purple-600 '>Register</Link></p>
+                        <p className='ml-14 md:ml-12 my-2'>Don't have an account? <Link to='/register' className='text-lg hover:underline font-semibold text-purple-600 '>Register</Link></p>
                         
                     </form>
+                        <SocialLogin></SocialLogin>
                 </div>
             </div>
         </div>

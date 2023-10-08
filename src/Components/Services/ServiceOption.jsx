@@ -3,9 +3,9 @@ const ServiceOption = ({ item }) => {
 
     console.log(item);
     return (
-        <div className='flex justify-center'>
+        <div className=''>
 
-            <div className='flex text-left items-center gap-1 text-xl'>
+            <div className='flex items-center gap-1 text-xl'>
                 <MdDoubleArrow className=''></MdDoubleArrow>
                 <p>{item}</p>
             </div>
