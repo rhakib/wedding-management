@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Footer = () => {
     return (
         <footer className="footer p-10 bg-base-200 text-base-content mt-12">
@@ -23,6 +24,12 @@ const Footer = () => {
                 <a className="link link-hover">About us</a>
                 <a className="link link-hover">Contact</a>
                 <a className="link link-hover">Press</a>
+            </nav>
+            <nav>
+                <header className="footer-title">Location</header>
+                <a className="link link-hover">7208 Lake Rd Ste 305, Orlando, FL 32819</a>
+                <a className="link link-hover">events@wedszone.com</a>
+                <a className="link link-hover">+14072592388</a>
             </nav>
             
         </footer>

@@ -13,7 +13,7 @@ const Services = ({ service }) => {
     return (
         <div data-aos="fade-right" className="card bg-base-100 shadow-xl">
             <figure><img className='h-[500px] w-full' src={img} alt="Shoes" /></figure>
-            <div className="card-body space-y-2 absolute text-center bg-base-200 bg-opacity-60 top-32 text-white">
+            <div className="card-body space-y-2 absolute text-center bg-base-200 bg-opacity-70 top-32 text-white">
                 <h2 className="text-4xl font-semibold">{title}</h2>
                 <p className=''>{shortDes}</p>
                 <div className='flex justify-center'>
