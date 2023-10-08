@@ -1,7 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import UseAuth from '../Provider/UseContext/UseAuth';
+import toast from 'react-hot-toast';
 
 const Login = () => {
+
+    const {signInUser} = UseAuth()
+    const navigate = useNavigate()
 
     const handleLogin = (e) => {
 
@@ -11,6 +16,18 @@ const Login = () => {
         const email = form.get('email');
         const password = form.get('password');
         console.log(email, password);
+
+        signInUser(email, password)
+        .then(res => {
+            console.log(res)
+            toast.success('Successfuly logged in')
+            navigate('/')
+
+
+        })
+        .catch(err => {
+            toast.error('please provide the valid email and password')
+        })
 }
     return (
         <div className="hero min-h-screen bg-base-200">
@@ -18,7 +35,7 @@ const Login = () => {
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Login now!</h1>
                 </div>
-                <div className="card flex-shrink-0 w-[400px] shadow-2xl mt-6 bg-base-100">
+                <div className="card flex-shrink-0 w-[350px] md:w-[400px]  shadow-2xl mt-6 bg-base-100">
                     <form onSubmit={handleLogin} className="card-body">                        
                         <div className="form-control">
                             <label className="label">

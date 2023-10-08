@@ -1,18 +1,41 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import UseAuth from '../Provider/UseContext/UseAuth';
+import toast from 'react-hot-toast';
 
 const Register = () => {
 
-    const handleRegister = (e) => {
+    const {createUser} = UseAuth()
+    const handleRegister = e =>{
+        e.preventDefault()
+        const form = new FormData(e.currentTarget)
 
-            e.preventDefault()
-            const form = new FormData(e.currentTarget)
-    
-            const name = form.get('name');
-            const img = form.get('image');
-            const email = form.get('email');
-            const password = form.get('password');
-            console.log(email, name, img, password);
+        const name = form.get('name');
+        const img = form.get('image');
+        const email = form.get('email');
+        const password = form.get('password');
+        console.log(email, name, img, password);
+
+        if (password.length < 6) {
+            toast.error('Password length should be at least 6 character')
+            return;
+        } 
+        else if(!/^(?=.*[A-Z])(?=.*[^a-zA-Z\d])/.test(password)) {
+            toast.error('please incldue an uppercase, a lowercase and a special character')
+            return;
+        }
+
+        createUser(email, password)
+        .then(res => {
+            console.log(res)
+            toast.success('Successfuly registered')
+
+        })
+        .catch(err => {
+            toast.error(err.message)
+        })
+
+
     }
 
     return (
@@ -21,7 +44,7 @@ const Register = () => {
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Register now!</h1>
                 </div>
-                <div className="card flex-shrink-0 w-[400px] shadow-2xl mt-6 bg-base-100">
+                <div className="card flex-shrink-0 w-[350px] md:w-[400px]  shadow-2xl mt-6 bg-base-100">
                     <form onSubmit={handleRegister} className="card-body">
                         <div className="form-control">
                             <label className="label">
