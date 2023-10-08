@@ -2,11 +2,15 @@ import { createBrowserRouter } from 'react-router-dom';
 import Root from '../Root/Root';
 import Home from '../Pages/Home';
 import ServiceDetails from '../Components/Services/ServiceDetails';
+import Register from '../Pages/Register';
+import ErrorPage from '../Pages/ErrorPage';
+import Login from '../Pages/Login';
 
 const myCreatedRouter = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -17,6 +21,14 @@ const myCreatedRouter = createBrowserRouter([
                 path: '/service/:id',
                 element: <ServiceDetails></ServiceDetails>,
                 loader: () => fetch('/data.json')
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
+            },
+            {
+                path: '/login',
+                element: <Login></Login>
             }
             
         ]

@@ -29,7 +29,7 @@
         "img": "https://i.ibb.co/37mqQ33/services1.jpg",
         "price": 550,
         "description": "Wedding decorations are the artistic expression of a couples love story, transforming venues into enchanting, personalized spaces that capture the essence of their union. These carefully chosen elements evoke emotion, create ambiance, and leave a lasting impression on all who attend. At the heart of wedding decorations are florals. From elegant bouquets to intricate centerpieces, flowers bring life and color to the celebration. These details elevate the dining experience and offer a glimpse into the couples taste and personality. Banners, signage, and custom backdrops add a personal touch, telling the couples love story and guiding guests through the event. Photo booths and props provide entertainment and create memorable keepsakes. Wedding decorations extend to the bride and grooms attire, reflecting their style and setting the tone for the day. From the wedding arch to the reception dance floor, every detail contributes to the overall design, making it a visual symphony that celebrates love, commitment, and the beginning of a beautiful journey together.",
-        "shortDes": "Wedding decorations are the artistic expression of a couples love story, personalized spaces that capture the essence.",
+        "shortDes": "Wedding decorations are the artistic expression of a couples story, personalized spaces that capture the essence.",
         "serviceDetail" : ["Event Lighting and Draping", "Floral Arrangements and Centerpieces", "Linen and Tableware Rentals","Backdrop and Photo Booth Design", "Ceiling and Ceiling Treatment Decor"]
 
     },
@@ -58,7 +58,7 @@
         "img": "https://i.ibb.co/PwqXQCM/services6.jpg",
         "price": 450,
         "description": "A wedding album is a timeless and cherished keepsake that encapsulates the magic and emotion of a couples special day in a tangible form. Its a meticulously crafted compilation of the most memorable moments, transformed into high-quality printed images, and carefully arranged in a beautifully bound book or album. The creation of a wedding album is an art form in itself. The quality of a wedding album is paramount. Premium materials, such as archival paper, leather covers, and fine printing techniques, ensure that the album stands the test of time, preserving the memories for generations to come. In an age of digital imagery, a wedding album serves as a tangible heirloom, a piece of art that can be passed down through families, shared with friends, and cherished as a symbol of enduring love. It transforms a collection of photographs into a treasured legacy, making the wedding album an essential and sentimental part of any couples journey into marriage.",
-        "shortDes": "A wedding album is a timeless and cherished keepsake that encapsulates the magic and emotion of a couples special day.",
+        "shortDes": "A wedding album is a timeless and cherished keepsake that encapsulates the magic and emotion together of a couples special day.",
         "serviceDetail" : ["Custom Wedding Album Design", "Photo Selection and Editing", "Personalized Album Printing","Digital Wedding Album Creation", "Parent and Guest Albums"]
     }
 ]

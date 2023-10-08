@@ -26,7 +26,7 @@ const CardDetails = ({ service }) => {
                         </div>
 
                         <div className="">
-                            <button className='btn text-white text-xl bg-slate-400 bg-opacity-50 w-1/2'>Book a Consultation</button>
+                            <button className='btn text-white text-xl bg-slate-400 bg-opacity-50 md:w-1/2'>Book a Consultation</button>
                         </div>
                     </div>
                 </div>
