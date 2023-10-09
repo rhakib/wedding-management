@@ -10,7 +10,7 @@ const CardDetails = ({ service }) => {
     console.log(serviceDetail);
 
     return (
-        <> <h2 className="text-4xl font-semibold text-center">{title}</h2>
+        <> <h2 className="text-4xl font-semibold text-center mt-4">{title}</h2>
             <div className="card bg-base-100 shadow-xl grid p-2 md:grid-cols-2 mt-10 ">
                 <figure><img className='rounded-xl h-[500px] w-[450px]' src={img} alt="Shoes" /></figure>
                 <div className="card bg-base-300 shadow-xl p-1">

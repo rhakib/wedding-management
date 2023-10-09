@@ -5,7 +5,7 @@ import { FaUserCircle } from 'react-icons/fa'
 const DashBoard = () => {
     const { user } = UseAuth()
     return (
-        <div className='flex justify-center'>
+        <div className='flex justify-center mt-6'>
             <div className="card lg:w-1/3 bg-slate-300 shadow-xl justify-center">
                 <figure className="px-10 pt-10">
                     {user?.photoURL ? <img src={user.photoURL} alt="Shoes" className="rounded-full w-1/2" /> : <FaUserCircle className="text-6xl"></FaUserCircle>}

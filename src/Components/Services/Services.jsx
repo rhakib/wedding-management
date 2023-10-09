@@ -21,7 +21,7 @@ const Services = ({ service }) => {
                 </div>
                 <Link to={`/service/${id}`}>
                     <div>
-                        <button className='btn text-xl w-full bg-slate-400 bg-opacity-70 border-0 text-white'>Book Now</button>
+                        <button className='btn text-xl w-full bg-slate-400 hover:bg-slate-700 bg-opacity-70 border-0 text-white'>Book Now</button>
                     </div>
                 </Link>
             </div>

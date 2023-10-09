@@ -1,8 +1,15 @@
-# React + Vite
+Website Name: Wedszone.com
+Website: https://wedding-event-management-e995f.web.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features:
 
-Currently, two official plugins are available:
+**Book Service**: User can book service through our website for their wedding ceremony.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Create Account** User can create an account to keep their history in the website
+
+**Visiting Gallery** User will be able to see our gallery after logged in. 
+
+**See Service Details** User will need to create an account to see our service details.
+
+**Dashboard** User can see their information in the dashboard after creating account.
+
