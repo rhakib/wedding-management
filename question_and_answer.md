@@ -8,7 +8,8 @@ A: {}
 B: ReferenceError: greetign is not defined
 C: undefined
 
-Answer: A: {}
+**Answer:** A: {}
+**Summary:** This ('greetign') attempts to log the value in a variable. Since greetign was assigned an empty object, so this will log an empty object to the console.
 
 
 2. 
@@ -24,7 +25,9 @@ B: TypeError
 C: "12"
 D: 3
 
-Answer: A: NaN
+**Answer:** A: "12"
+**Summary:** when we use the + operator to add values, if one of the value is a string, JavaScript will perform string concatenation instead of numerical addition.  In this case, "2" is a string and we are getting value "12".
+
 
 
 3. 
@@ -41,7 +44,10 @@ B: ['🍝', '🍫', '🥑', '🍔']
 C: ['🍝', '🍕', '🍫', '🥑', '🍔']
 D: ReferenceError
 
-Answer: A: ['🍕', '🍫', '🥑', '🍔']
+**Answer:** A: ['🍕', '🍫', '🥑', '🍔']
+**Summary:** We know reassignment of the info.favoriteFood property doesn't affect the original food array. Changing the property value does not change the original array element.
+
+
 
 
 4. 
@@ -57,7 +63,8 @@ B: Hi there, undefined
 C: Hi there, null
 D: ReferenceError
 
-Answer: B: Hi there, undefined
+**Answer:** B: Hi there, undefined
+**Summary:** We are getting undefined, because we didn't pass any parameter to the function.
 
 5. 
 
@@ -74,4 +81,5 @@ B: 2
 C: 3
 D: 4
 
-Answer: C: 3
+**Answer:** C: 3
+**Summary:** Inside the arrow function, there is an if statement. It checks if the current num is truthy. If num is truthy, it increments the count variable by 1.
