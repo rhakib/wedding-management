@@ -16,7 +16,7 @@ const DashBoard = () => {
                     {user?.email ? <h3><span className='font-semibold text-lg'>Email:</span> {user.email}</h3> : <h3>N/A</h3>}
                     <h2><span className='font-semibold text-lg'>Phone:</span> +1 012 345 678</h2>
                     <div className="card-actions">
-                        <button className="btn btn-primary">Edit</button>
+                        <button className="btn text-white bg-slate-500">Edit</button>
                     </div>
                 </div>
             </div>

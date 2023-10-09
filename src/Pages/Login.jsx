@@ -31,32 +31,32 @@ const Login = () => {
         })
 }
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen" style={{ backgroundImage: 'url("https://i.ibb.co/G7CJZQS/venue2.jpg")', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', backgroundSize: 'cover'  }}>
             <div className="hero-content flex-col">
                 <div className="text-center lg:text-left">
-                    <h1 className="text-5xl font-bold">Login now!</h1>
+                    <h1 className="text-5xl text-black font-bold">Login now!</h1>
                 </div>
-                <div className="card flex-shrink-0 w-[350px] md:w-[400px]  shadow-2xl mt-6 bg-base-100">
+                <div className="card flex-shrink-0 w-[350px] md:w-[400px]  shadow-2xl mt-6 bg-slate-400">
                     <form onSubmit={handleLogin} className="card-body">                        
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Email</span>
+                                <span className="label-text text-black font-semibold text-xl">Email</span>
                             </label>
-                            <input type="email" name='email' placeholder="Email" className="input input-bordered" />
+                            <input type="email" name='email' placeholder="Email" className="input bg-slate-300 input-bordered" />
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Password</span>
+                                <span className="label-text  text-black font-semibold text-xl">Password</span>
                             </label>
-                            <input type="password" name='password' placeholder="Password" className="input input-bordered" />
+                            <input type="password" name='password' placeholder="Password" className="input bg-slate-300 input-bordered" />
                             <label className="label">
-                                <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                                <a href="#" className="label-text-alt text-black link link-hover">Forgot password?</a>
                             </label>
                         </div>
                         <div className="form-control mt-6">
                             <button type='submit' className="btn text-xl text-white hover:bg-slate-900 bg-slate-500">Login</button>
                         </div>
-                        <p className='ml-14 md:ml-12 my-2'>Don't have an account? <Link to='/register' className='text-lg hover:underline font-semibold text-purple-600 '>Register</Link></p>
+                        <p className='ml-14 md:ml-12 text-black my-2'>Don't have an account? <Link to='/register' className='text-lg hover:underline font-semibold text-purple-600 '>Register</Link></p>
                         
                     </form>
                         <SocialLogin></SocialLogin>

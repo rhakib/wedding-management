@@ -46,41 +46,41 @@ const Register = () => {
     }
 
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen" style={{ backgroundImage: 'url("https://i.ibb.co/yNgmyqk/venue.jpg")', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', backgroundSize: 'cover'  }}>
             <div className="hero-content flex-col">
                 <div className="text-center lg:text-left">
-                    <h1 className="text-5xl font-bold">Register now!</h1>
+                    <h1 className="text-5xl text-black font-bold">Register now!</h1>
                 </div>
-                <div className="card flex-shrink-0 w-[350px] md:w-[400px]  shadow-2xl mt-6 bg-base-100">
+                <div className="card flex-shrink-0 w-[350px] md:w-[400px]  shadow-2xl mt-6 bg-slate-400">
                     <form onSubmit={handleRegister} className="card-body">
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Name</span>
+                                <span className="label-text text-black font-semibold text-xl">Name</span>
                             </label>
-                            <input type="text" name='name' placeholder="Your name" className="input input-bordered" />
+                            <input type="text" name='name' placeholder="Your name" className="input input-bordered bg-slate-300" />
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Image</span>
+                                <span className="label-text text-black font-semibold text-xl">Image</span>
                             </label>
-                            <input type="text" name='image' placeholder="Image URL" className="input input-bordered" />
+                            <input type="text" name='image' placeholder="Image URL" className="input bg-slate-300 input-bordered" />
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Email</span>
+                                <span className="label-text text-black font-semibold text-xl">Email</span>
                             </label>
-                            <input type="email" name='email' placeholder="Email" className="input text input-bordered" />
+                            <input type="email" name='email' placeholder="Email" className="input bg-slate-300  input-bordered" required/>
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Password</span>
+                                <span className="label-text text-black font-semibold text-xl">Password</span>
                             </label>
-                            <input type="password" name='password' placeholder="Password" className="input input-bordered" />
+                            <input type="password" name='password' placeholder="Password" className="input bg-slate-300 input-bordered" required/>
                         </div>
                         <div className="form-control mt-6">
                             <button type='submit' className="btn text-white text-xl hover:bg-slate-900 bg-slate-500 ">Register</button>
                         </div>
-                    <p className='ml-14 md:ml-12 my-2'>Already have an account? <Link to='/login' className='text-purple-600 hover:underline text-lg font-semibold '>Login</Link></p>
+                    <p className='ml-14 md:ml-12 text-black my-2'>Already have an account? <Link to='/login' className='text-purple-600 hover:underline text-lg font-semibold '>Login</Link></p>
                     </form>
                     <SocialLogin></SocialLogin>
                 </div>

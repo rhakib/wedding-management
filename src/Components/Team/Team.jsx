@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { AiFillInstagram, AiFillLinkedin} from 'react-icons/ai'
+import { BiLogoFacebookCircle} from 'react-icons/bi'
 const Team = () => {
     return (
         <div>
@@ -14,6 +15,11 @@ const Team = () => {
                         <h2 className="text-3xl font-semibold text-white">Michael Doe</h2>
                         <p className="text-xl text-black mt-3">Founder <span className='font-mono'>&</span> Cheif Event Organizer</p>
                     </div>
+                    <div className='text-3xl flex gap-2 mt-2'>
+                        <AiFillInstagram></AiFillInstagram>
+                        <BiLogoFacebookCircle></BiLogoFacebookCircle>
+                        <AiFillLinkedin></AiFillLinkedin>
+                    </div>
                 </div>
                 <div data-aos="zoom-out-up" className="flex flex-col items-center bg-slate-400 py-10 rounded-lg">
                     <div className="w-[200px] h-[200px]">
@@ -23,6 +29,11 @@ const Team = () => {
                         <h2 className="text-3xl font-semibold text-white">Olivia Johnson </h2>
                         <p className="text-xl text-black mt-3">Cheif Event Planner</p>
                     </div>
+                    <div className='text-3xl flex gap-2 mt-2'>
+                        <AiFillInstagram></AiFillInstagram>
+                        <BiLogoFacebookCircle></BiLogoFacebookCircle>
+                        <AiFillLinkedin></AiFillLinkedin>
+                    </div>
                 </div>
                 <div data-aos="zoom-out-up" className="flex flex-col items-center bg-slate-400 py-10 rounded-lg">
                     <div className="w-[200px] h-[200px]">
@@ -31,6 +42,11 @@ const Team = () => {
                     <div className="text-center mt-4">
                         <h2 className="text-3xl font-semibold text-white">Sophia Brown</h2>
                         <p className="text-xl text-black mt-3">Photographer</p>
+                    </div>
+                    <div className='text-3xl flex gap-2 mt-2'>
+                        <AiFillInstagram></AiFillInstagram>
+                        <BiLogoFacebookCircle></BiLogoFacebookCircle>
+                        <AiFillLinkedin></AiFillLinkedin>
                     </div>
                 </div>
             </div>

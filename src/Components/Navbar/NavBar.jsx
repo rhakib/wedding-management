@@ -24,7 +24,7 @@ const NavBar = () => {
         {user ? <li className="bg-base-200 rounded-xl">
             <li className="flex gap-2 items-center p-3">
                 {user?.photoURL? <li className="w-[100px] lg:w-[40px]"><img className="w-full rounded-full" src={user.photoURL} alt="" /></li> : <FaUserCircle className="text-2xl"></FaUserCircle>}
-                <li className="">{user.displayName}</li>
+                <li className="bg-slate-200 rounded-md px-2">{user.displayName}</li>
                 <li className=""><button className="bg-slate-500 flex items-center gap-1 text-white p-2 rounded-lg" onClick={handleLogOut}><span><FaSignOutAlt></FaSignOutAlt></span>Logout</button></li>
             </li>
         </li> : <li className="mr-4"><NavLink to='/login'>Login</NavLink></li>}
@@ -43,9 +43,9 @@ const NavBar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <Link to={'/'}><a className="btn btn-ghost normal-case text-2xl">WedsZone</a></Link>
+                    <Link to={'/'}><a className="text-black normal-case text-2xl">WedsZone</a></Link>
                 </div>
-                <div className="navbar-end hidden lg:flex">
+                <div className="navbar-end hidden text-black lg:flex">
                     <ul className="flex font-semibold items-center gap-7">
                         {navLinks}
                     </ul>

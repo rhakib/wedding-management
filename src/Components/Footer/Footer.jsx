@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { AiFillInstagram, AiFillLinkedin} from 'react-icons/ai'
+import { BiLogoFacebookCircle} from 'react-icons/bi'
 
 
 const Footer = () => {
@@ -20,10 +22,12 @@ const Footer = () => {
                 <a className="link link-hover">Album Creation</a>
             </nav>
             <nav>
-                <header className="footer-title">Company</header>
-                <a className="link link-hover">About us</a>
-                <a className="link link-hover">Contact</a>
-                <a className="link link-hover">Press</a>
+                <header className="footer-title">Social</header>
+                <div className=' space-y-3'>
+                        <p className='flex gap-1 items-center'><AiFillInstagram className='text-3xl'></AiFillInstagram> Instagram</p>
+                        <p className='flex gap-1 items-center'><BiLogoFacebookCircle className='text-3xl'></BiLogoFacebookCircle> Facebook</p>
+                        <p className='flex gap-1 items-center'><AiFillLinkedin className='text-3xl'></AiFillLinkedin> Linkedin</p>
+                    </div>
             </nav>
             <nav>
                 <header className="footer-title">Location</header>
