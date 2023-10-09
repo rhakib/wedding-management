@@ -34,6 +34,7 @@ const Register = () => {
                     .then(res => {
                         toast.success('Successfuly registered')
                         navigate('/')
+                        window.location.reload(true)
                     })
 
             })

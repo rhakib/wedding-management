@@ -2,17 +2,18 @@ import React from 'react';
 import { AiOutlineGoogle } from 'react-icons/ai'
 import UseAuth from '../Provider/UseContext/UseAuth';
 import toast from 'react-hot-toast';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const SocialLogin = () => {
     const {googleSignIn} = UseAuth()
     const navigate = useNavigate()
+    const location = useLocation()
 
     const handeleGoogleSignIn = () => {
         googleSignIn()
         .then(res =>{
               toast.success('Successfuly logged in')  
-              navigate('/')        
+              navigate(location?.state ? location.state : '/')     
         })
         .catch(err => {
 
